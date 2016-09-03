@@ -52,7 +52,6 @@ digraph {
 240 [href="https://github.com/pangfengliu/programmingtasks/issues/240"]
 241 [href="https://github.com/pangfengliu/programmingtasks/issues/241"]
 242 [href="https://github.com/pangfengliu/programmingtasks/issues/242"]
-243 [href="https://github.com/pangfengliu/programmingtasks/issues/243"]
 244 [href="https://github.com/pangfengliu/programmingtasks/issues/244"]
 248 [href="https://github.com/pangfengliu/programmingtasks/issues/248"]
 249 [href="https://github.com/pangfengliu/programmingtasks/issues/249"]
@@ -167,14 +166,13 @@ digraph {
        	      	 		// 265 min containing box
    {17 18 33} -> 271 		// multiply polynomial 
 
-   {195} -> 243   // house of mirrors
-   {32 49 265 271, 243} -> 235 // pachingo
+   {32 49 265 271} -> 235 // pachingo
 
 // level VI function
 
-   243 -> 236			// lcm
-   243 -> 22			// negative and positive
-   243 -> 21			// maximum in matrix
+   204 -> 236			// lcm
+   204 -> 22			// negative and positive
+   204 -> 21			// maximum in matrix
    {236 22 21} -> 128		// city roads in function
    {236 22 21} -> 218		// sum of selection
    {128 218} -> 50		// overlap area
