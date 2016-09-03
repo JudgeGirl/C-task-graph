@@ -40,7 +40,6 @@ digraph {
 223 [href="https://github.com/pangfengliu/programmingtasks/issues/223"]
 224 [href="https://github.com/pangfengliu/programmingtasks/issues/224"]
 225 [href="https://github.com/pangfengliu/programmingtasks/issues/225"]
-226 [href="https://github.com/pangfengliu/programmingtasks/issues/226"]
 23 [href="https://github.com/pangfengliu/programmingtasks/issues/23"]
 230 [href="https://github.com/pangfengliu/programmingtasks/issues/230"]
 232 [href="https://github.com/pangfengliu/programmingtasks/issues/232"]
@@ -148,8 +147,8 @@ digraph {
    13 -> {73, 88}
    232 -> 36
    73 -> 97
-   73 -> 242
-   {54 88} -> {244 242 234 232}
+   {54 73 88} -> 242
+   {54 88} -> {244 234 232}
    73 -> 54
    {244 242 232} -> {203 204}
    {203 204 36} -> 55	// level IV boss
@@ -169,8 +168,7 @@ digraph {
    {17 18 33} -> 271 		// multiply polynomial 
 
    {195} -> 243   // house of mirrors
-   {32 49 265 271} -> 235
-   243 -> 235   // pachingo
+   {32 49 265 271, 243} -> 235 // pachingo
 
 // level VI function
 
@@ -251,10 +249,7 @@ digraph {
 
    28 -> 132			// color countries
    132 -> 248 			// mine field
-   248 -> 261			// puzzle equation (boss)
-   266 -> 261
-   223 -> 261
-   230 -> 261
+   {248 266 223 230} -> 261			// puzzle equation (boss)
 
 // level XII structure
 
@@ -281,7 +276,6 @@ digraph {
    224 -> 94			// tree traversal
    94 -> 109			// path printing
    94 -> 134			// reconstruct a tree
-   134 -> 226			// reconstruct a tree fro level
    94 -> 65			// expression tree
    94 -> 93			// heap
  
