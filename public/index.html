@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="./javascripts/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="./javascripts/viz.js"></script>
+	</head>
+	<body>
+		<div id="task">
+		</div>
+		<script>
+			(function(window, document) {
+				$.ajax({
+		            url: "./data/task.dot",
+		            async: false,
+		            success: function (data){
+		                var image;
+						image = Viz(data, { format: "svg" });
+						$("#task").html(image);
+		            }
+		        });
+			}(this, this.document));
+		</script>
+	</body>
+</html>
