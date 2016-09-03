@@ -134,7 +134,7 @@ digraph {
 
 // level III if-the-else switch
 
-   241 -> {9} 			// integer score
+   {8, 7} -> {9} 			// integer score
    9 -> 215			// chicken, rabbit, crab (hard)
    215 -> {80 240} 		// quadral type, triangle type
    {80 240} -> 10
@@ -142,7 +142,7 @@ digraph {
 
 // level IV loop
 
-   202 ->  15 
+   10 -> 15 
    15 -> 12
    12 -> 13
    13 -> {73, 88}
@@ -151,7 +151,7 @@ digraph {
    73 -> 242
    {54 88} -> {244 242 234 232}
    73 -> 54
-   {244 242 234 232} -> {203 204}
+   {244 242 232} -> {203 204}
    {203 204 36} -> 55	// level IV boss
 
 // level V array
@@ -174,9 +174,9 @@ digraph {
 
 // level VI function
 
-   235 -> 236			// lcm
-   235 -> 22			// negative and positive
-   235 -> 21			// maximum in matrix
+   243 -> 236			// lcm
+   243 -> 22			// negative and positive
+   243 -> 21			// maximum in matrix
    {236 22 21} -> 128		// city roads in function
    {236 22 21} -> 218		// sum of selection
    {128 218} -> 50		// overlap area
@@ -195,7 +195,7 @@ digraph {
    23 -> 206			//card shuffle
    23 -> 72 			// fill the array 
    72 -> 129			// zig zag array
-   {206 72} -> 190			// function evaluation
+   72 -> 190			// function evaluation
    {129 190} -> 100 			// snake order
 
 // level VIII character
@@ -204,7 +204,7 @@ digraph {
    75 -> 24			// vowel consonant and digit
    100 -> 106			// divisible 
    {24 106} -> {191 220} 		// character, word, tokenms, & sentence count
-   {191 220} -> 277				//digits
+   {191} -> 277				//digits
 
 // level IX string
 
@@ -219,7 +219,7 @@ digraph {
 
    260 -> 221 			// typesetting
 
-   {47 276 98 221} -> 270			// BASIC
+   {46 276 98 221} -> 270			// BASIC
 
 // level X extended data type and bit operation
 
@@ -238,7 +238,7 @@ digraph {
    28 -> 38			// witchcraft
    28 -> 238 			// subset sum
    28 -> 104			// material composition
-   {38 238 104} -> 230		// knapsack
+   {238 104} -> 230		// knapsack
 
 
    28 -> 53			// permutation
@@ -249,7 +249,7 @@ digraph {
    58 -> 266			// edit distance
    30 -> 58 			// lake
 
-   38 -> 132			// color countries
+   28 -> 132			// color countries
    132 -> 248 			// mine field
    248 -> 261			// puzzle equation (boss)
    266 -> 261
@@ -262,19 +262,19 @@ digraph {
    275 -> 249			// company
    275 -> 210			// SQL database
    275 -> 44			// library fine
-   {249 210 44} -> 251			// company again
+   {249 210} -> 251			// company again
 
 // level XIII file IO
 
    251 -> 89    		// file encoding
    89 -> 264			// frequency count
-   264 -> 136			// binary grad to HTML
-   264 -> 225 			// friends
+   89 -> 136			// binary grad to HTML
+   89 -> 225 			// friends
  
 // level XIV data structures & object
 
    251 -> 77 	  		// get the i-th elelment
-   77 -> 87			// merge list
+   251 -> 87			// merge list
    87 -> 269			// memory allocation
 
    251 -> 224			// super and sub
