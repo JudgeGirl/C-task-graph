@@ -16,3 +16,5 @@ href: task.dot gen-href
 
 area-naive: area-naive
 
+clean:
+	-rm *.svg *.pdf *.png
